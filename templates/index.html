@@ -1,0 +1,223 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'styles.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Elyn May's Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">My Portfolio</div>
+        <nav>
+          <a href="#Projects">Projects</a>
+          <a href="#Skills">Skills</a>
+          <a href="{% static 'media/MyResume2024.pdf' %}" target="_blank">Resume</a>
+
+          </a>
+          
+
+         
+        </nav>
+      </header>
+      
+      <section class="hero">
+        <p><h1>Hello, I'm Elyn May Macatangay</h1>
+          <p class="typing"> A 4th year BSIT student in Palawan State University. 
+        <p>A passionate girl earning experience in building responsive and user-friendly websites. 
+           I enjoy turning complex problems into simple, beautiful, and intuitive designs. 
+          When I'm not coding, you'll find me exploring nature or reading anything that caught my interest.
+          <br>This is My Portfolio using Django, so explore and enjoy! 
+        </p>
+        </p>
+    </section>
+
+    <section id="timeline">
+      <h2>My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>2018</h3>
+          <p>Graduated Senior High School, in TVL strand - ICT.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2022</h3>
+          <p>Started working on my first part time Job not related in Technology.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2024</h3>
+          <p>Started working on our Capstone Project Titled; MIMAROPA Ventures Innovation Network Consortium Web Application</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2025</h3>
+          <p>Graduated with Bachelor's degree of Information Technology.</p>
+        </div>
+      </div>
+    </section>    
+  
+    <section class="Projects" id="Projects">
+        <h2>Projects</h2>
+        <div class="project-card" data-project="1">
+            <h3>Project One</h3>
+            <p>My 18th Birthday Invitation, exploring MS Word in 2018, not aware of how to use any photo editing tools..</p>
+            <img src="{% static 'media/Jen.jpg' %}" width="300">
+
+        </div>
+        <div class="project-card" data-project="2">
+            <h3>Project Two</h3>
+            <p>My friend's 18th birthday invitation, another result of MS Word features not aware of how to use any photo editing tools.</p>
+            <img src="{% static 'media/lyn.jpg' %}" width="300">
+        </div>
+        <div class="project-card" data-project="2">
+          <h3>Project Three</h3>
+          <p>Got 2nd place in technolympics way back in high school. Yey! But hey, It is my first time designing E-commerce site using HTML and CSS and I only got a certificate as a remembrance, and an experience.</p>
+          <img src="{% static 'media/cert.jpg' %}" width="300">
+      </div>
+    </section>
+
+    <section class="Skills" id="Skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+    
+        <div class="skill" id="html-skill">
+          <div class="skill-circle">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none" />
+              <circle class="progress" data-percent="60" cx="75" cy="75" r="70" stroke="#ffb3c6" stroke-width="10" fill="none" />
+            </svg>
+            <span>HTML</span>
+          </div>
+          <div class="tooltip">Practicing in semantic HTML5, accessibility, and other practices.</div>
+        </div>
+    
+        <div class="skill" id="css-skill">
+          <div class="skill-circle">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none" />
+              <circle class="progress" data-percent="70" cx="75" cy="75" r="70" stroke="#b3e5fc" stroke-width="10" fill="none" />
+            </svg>
+            <span>CSS</span>
+          </div>
+          <div class="tooltip">Exploring responsive design, animations, Flexbox, and Grid layout.</div>
+        </div>
+    
+        <div class="skill" id="js-skill">
+          <div class="skill-circle">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none" />
+              <circle class="progress" data-percent="40" cx="75" cy="75" r="70" stroke="#fff3b0" stroke-width="10" fill="none" />
+            </svg>
+            <span>JavaScript</span>
+          </div>
+          <div class="tooltip">Experience with async programming, and modern JS frameworks like React.</div>
+        </div>
+    
+        <div class="skill" id="ms-skill">
+          <div class="skill-circle">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none" />
+              <circle class="progress" data-percent="85" cx="75" cy="75" r="70" stroke="#c3fbd8" stroke-width="10" fill="none" />
+            </svg>
+            <span>Microsoft Office</span>
+          </div>
+          <div class="tooltip">Experience using Microsoft Office tools like Excel, Word, etc.</div>
+        </div>
+    
+        <div class="skill" id="csharp-skill">
+          <div class="skill-circle">
+            <svg width="150" height="150" viewBox="0 0 150 150">
+              <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none" />
+              <circle class="progress" data-percent="35" cx="75" cy="75" r="70" stroke="#d0bdf4" stroke-width="10" fill="none" />
+            </svg>
+            <span>C# Programming</span>
+          </div>
+          <div class="tooltip">Experience with basics of C# from my first year in college.</div>
+        </div>
+    
+      </div>
+    </section>
+
+</button>
+  <!-- Scroll to Top button -->
+<button id="scrollToTopBtn" class="scroll-btn">
+  Scroll to Top
+</button>
+
+  
+<footer>
+    <p>Corporate Email: 201880149@psu.palawan.edu.ph | Contact Number: 639-504-000-9283 | &copy; 2025 Elyn May D. Macatangay</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ElynMay" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</footer>
+<script>
+  function animateCircle(circle) {
+    const radius = circle.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+    const percent = parseInt(circle.dataset.percent);
+
+    const offset = circumference - (percent / 100 * circumference);
+    circle.style.strokeDasharray = circumference;
+    circle.style.strokeDashoffset = circumference;
+
+    setTimeout(() => {
+      circle.style.transition = 'stroke-dashoffset 1.5s ease-out';
+      circle.style.strokeDashoffset = offset;
+    }, 100);
+  }
+
+  function triggerAnimation() {
+    const skillsSection = document.getElementById("Skills");
+    const rect = skillsSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      document.querySelectorAll(".progress").forEach(animateCircle);
+      window.removeEventListener('scroll', triggerAnimation);
+    }
+  }
+
+  window.addEventListener('scroll', triggerAnimation);
+  window.addEventListener('load', triggerAnimation);
+</script>
+<script>
+  // Get the button
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+  // Function to scroll to the top of the page
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0, // Scroll to the top of the page
+      behavior: 'smooth' // Smooth scroll effect
+    });
+  });
+
+  // Show the button when the user scrolls down a little bit
+  window.onscroll = function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollToTopBtn.style.display = "block"; // Show button when scrolling down
+    } else {
+      scrollToTopBtn.style.display = "none";  // Hide button when at top
+    }
+  };
+</script>
+
+
+
+</body>
+</html>

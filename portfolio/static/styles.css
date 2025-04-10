@@ -1,0 +1,237 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9; /* Light pastel background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #b3cde0; /* Pastel blue */
+  color: #333;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+header nav a {
+  color: #333;
+  margin-left: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: #f7c4e6; /* Soft pastel pink hover */
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #ffebcd; /* Pastel yellow */
+  color: #333;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #ff6b6b; /* Soft pastel red */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.hero .typing {
+  font-style: italic;
+  color: #ff7f50; /* Pastel coral */
+}
+
+/* Timeline Section */
+#timeline {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#timeline h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffb6c1; /* Light pastel pink */
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.timeline-item {
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #b6e3d8; /* Pastel teal */
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+#Projects {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#Projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #c1e1dc; /* Pastel lavender */
+}
+
+.project-card {
+  display: inline-block;
+  width: 280px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0e68c; /* Pastel yellow */
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background-color: #e6e6fa; /* Pastel lavender hover */
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skill {
+  text-align: center;
+  position: relative;
+}
+
+.skill svg {
+  transform: rotate(-90deg);
+}
+
+.progress {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.skill:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Footer */
+footer {
+  background-color: #b3cde0; /* Pastel blue */
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #f7c4e6; /* Soft pastel pink */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .project-card {
+      width: 90%;
+  }
+
+  .skill-circle svg {
+      width: 100px;
+      height: 100px;
+  }
+}
+/* Scroll to Top Button */
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4fa3d1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #3b8a9e;
+}
